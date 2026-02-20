@@ -3,14 +3,13 @@ kind: Service
 metadata:
   name: {{ include "itax.fullname" . }}
   labels:
-    app: {{ include "itax.name" . }}
+    {{- include "itax.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: {{ .Values.service.port }}
+      targetPort: http
       protocol: TCP
       name: http
   selector:
-    app: {{ include "itax.name" . }}
-
+    {{- include "itax.selectorLabels" . | nindent 4 }}
