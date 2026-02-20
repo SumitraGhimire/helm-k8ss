@@ -32,7 +32,7 @@ affinity: []
 
 # Name of Kubernetes Secret for private registry
 imagePullSecrets:
-  - regcred
+  - registrycreden
 
 # Add ServiceAccount settings
 serviceAccount:
