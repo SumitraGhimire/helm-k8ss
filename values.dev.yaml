@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: dockerregistry.irddb.gov.np:5000/tp-itaxservice
-  tag: dev-latest
+  tag: latest
   pullPolicy: IfNotPresent
 
 service:
