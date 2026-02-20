@@ -28,4 +28,4 @@ imagePullSecrets:
 # Add ServiceAccount settings
 serviceAccount:
   create: true
-  name: ""
+  name: "itaxservice-service"
