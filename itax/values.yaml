@@ -49,3 +49,10 @@ ingress:
         - path: /
           pathType: Prefix
   tls: []
+
+
+httpRoute:
+  enabled: false
+  parentRefs: []
+  hostnames: []
+  rules: []
