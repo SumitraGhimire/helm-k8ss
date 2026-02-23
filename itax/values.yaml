@@ -66,10 +66,10 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: 10.10.40.16
+    - host: ItsApiGateWays-service
       paths:
         - path: /itax/api
-          pathType: ImplementationSpecific
+          pathType: Prefix
   tls: []
     # - secretName: chart-example-tls
     #   hosts:
